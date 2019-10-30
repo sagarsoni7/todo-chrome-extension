@@ -1,0 +1,10 @@
+.clockStyle{
+    font-family: Montserrat, 'Segoe UI', Tahoma, sans-serif;
+font-size: 19px;
+display: block;
+position: relative;
+box-sizing: border-box;
+background-color: white;
+border-radius: 50%;
+box-shadow: 0 30px 40px 0 rgba(16, 36, 94, 0.2);
+}

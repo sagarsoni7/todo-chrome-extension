@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+
+  "name": "To-Do Chrome Extension",
+  "description": "Requestly Exercise 0",
+  "version": "0.0.1",
+
+  "browser_action": {
+    "default_title": "Open newtab to see"
+  },
+  "chrome_url_overrides" : {
+    "newtab": "index.html"
+  },
+  "icons": {
+    "16": "logo-small.png",
+    "48": "logo-small.png",
+    "128": "logo-small.png"
+  },  
+  "permissions": []
+}
