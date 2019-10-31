@@ -5,34 +5,7 @@ import AddGroup from "./components/addGroup";
 import Todo from "./components/todo";
 
 function App() {
-  const [todos, setTodos] = useState([
-    {
-      content: [
-        {
-          text: "This is an item for this group",
-          isCompleted: false
-        },
-        {
-          text: "This is also an item for this group",
-          isCompleted: false
-        }
-      ],
-      todogroup: "This is a group"
-    },
-    {
-      content: [
-        {
-          text: "This item belongs to this group",
-          isCompleted: false
-        },
-        {
-          text: "This item also belongs to this group",
-          isCompleted: false
-        }
-      ],
-      todogroup: "This is an another group"
-    }
-  ]);
+  const [todos, setTodos] = useState([]);
 
   const addGroup = text => {
     const newTodos = [...todos, { content:[],todogroup:text }];

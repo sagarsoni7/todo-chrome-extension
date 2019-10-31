@@ -24,12 +24,12 @@ function AddGroup({addGroup}){
                 type="text"
                 id="todo-list-item"
                 value={value}
-                placeholder="What will you do today?"
+                placeholder="Enter group name..."
                 onChange={e=>setValue(e.target.value)}
               />{" "}
               
             </div>{" "}
-            <input type="submit" value="Create Group" className="add-items main-search-button"/>
+            <input type="submit" value="Create" className="add-items main-search-button"/>
             </form>
           </div>
         </div>
