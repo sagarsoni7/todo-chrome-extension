@@ -7,9 +7,9 @@ body {
 /* The navigation bar */
 .topbar {
     overflow: hidden;
-    position: fixed; /* Set the topbar to fixed position */
+    position: absolute; /* Set the topbar to fixed position */
     top: 10px; /* Position the topbar at the top of the page */
-    width: 100%; /* Full width */
+    width: 97%; /* Full width */
     float: left;
     display: block;
     color: #f2f2f2;

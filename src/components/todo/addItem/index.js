@@ -1,21 +1,36 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 
-function AddItem({groupIndex,addItem}){
-    const [value, setValue]=useState(" ");
+function AddItem({ groupIndex, addItem }) {
+  const [value, setValue] = useState("");
 
-    const handleSubmit=e=>{
-        e.preventDefault();
-        if(!value) return;
-        addItem(value,groupIndex);
-        setValue("");
-    };
-    
-    return(
-        <form onSubmit={handleSubmit}>
-          <input  type="text" placeholder="add something to group..." value={value} onChange={e=>setValue(e.target.value)}/>
-          <input style={{backgroundColor:"#4DB7FE",border:"none",color:"white", height:"21px"}} type="submit" value="Add to Group"/>
-        </form>
-    );
-};
+  const handleSubmit = e => {
+    e.preventDefault();
+    if (!value) return;
+    addItem(value, groupIndex);
+    setValue("");
+  };
+
+
+  return (
+    <tr>
+      <td>
+        <input
+          style={{ border: "none", backgroundColor:"transparent" }}
+          type="text"
+          placeholder="add something to group..."
+          value={value}
+          onChange={e => setValue(e.target.value)}
+                  />
+      </td>
+      <td
+        onClick={handleSubmit}
+        style={{ fontWeight: "bold", textAlign: "center", color: "#4DB7FE" }}
+      >
+        Add
+      </td>
+      <td></td>
+    </tr>
+  );
+}
 
 export default AddItem;
