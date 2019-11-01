@@ -20,6 +20,6 @@ to install all  dependencies. Use command
 
 to build files. Navigate to Chrome extensions page, enable Developer Tools, load the package.
 
-### Dev Environment Variables
+### Environment Variables
 
 > INLINE_RUNTIME_CHUNK=false
